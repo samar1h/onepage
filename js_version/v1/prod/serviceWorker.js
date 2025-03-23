@@ -1,27 +1,27 @@
 // serviceWorker.js
 const CACHE_NAME = 'onepage-v3';
 const urlsToCache = [
-    '',
-    'index.html',
-    'manifest.json',
-    'favicon.ico',
-    'favicon.svg',
-    'favicon-16x16.png',
-    'favicon-32x32.png',
-    "android-chrome-192x192.png",
-    "android-chrome-512x512.png",
+    'https://samar1h.github.io/onepage/js_version/v1/prod/',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/index.html',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/manifest.json',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/favicon.ico',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/favicon.svg',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/favicon-16x16.png',
+    'https://samar1h.github.io/onepage/js_version/v1/prod/favicon-32x32.png',
+    "https://samar1h.github.io/onepage/js_version/v1/prod/android-chrome-192x192.png",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/android-chrome-512x512.png",
     // Cache CSS
     // 'static/css/main.*.css',
     // Cache JS
     // 'static/js/main.*.js',
     // Wildcard patterns (*) dont work so Hardcoding Shit, ik i suck...
-    "static/css/main.55447cda.css",
-    "static/css/main.c7690eb8.css",
-    "static/css/main.f53b863c.css",
-    "static/js/main.4686c066.js",
-    "static/js/main.73aecd8c.js",
-    "static/js/main.d5f9f340.js",
-    "static/js/main.f74bc11e.js",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/css/main.55447cda.css",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/css/main.c7690eb8.css",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/css/main.f53b863c.css",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/js/main.4686c066.js",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/js/main.73aecd8c.js",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/js/main.d5f9f340.js",
+    "https://samar1h.github.io/onepage/js_version/v1/prod/static/js/main.f74bc11e.js",
     
     
 ];
@@ -85,7 +85,7 @@ self.addEventListener('fetch', event => {
                         }
                         // If both network and cache fail, show offline page
                         if (event.request.mode === 'navigate') {
-                            return caches.match('/index.html');
+                            return caches.match('https://samar1h.github.io/onepage/js_version/v1/prod/index.html');
                         }
                         return new Response('Not available offline');
                     });

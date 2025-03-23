@@ -22,23 +22,23 @@ OnePage is a minimalist note-taking app designed to help you declutter your thou
 
 
 ### Getting Started
-1. Visit [samar1h.github.io/one-page](https://samar1h.github.io/one-page/)
+1. Visit [samar1h.github.io/one-page](https://samar1h.github.io/onepage/)
 2. Start typing your thoughts!
 3. If you'd like to install the app, click the gear icon in the top right corner and select "Install App."
 
 ### License : [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 
 ### Screenshots:
-![1](/screenshots/1.png)
-![2a](/screenshots/2a.png)
-![2b](/screenshots/2b.png)
-![3](/screenshots/3.png)
-![4](/screenshots/4.png)
-![5](/screenshots/5.png)
-![6](/screenshots/6.png)
-![7](/screenshots/7.png)
-![8](/screenshots/8.png)
-![9](/screenshots/9.png)
+![1](./screenshots/1.png)
+![2a](./screenshots/2a.png)
+![2b](./screenshots/2b.png)
+![3](./screenshots/3.png)
+![4](./screenshots/4.png)
+![5](./screenshots/5.png)
+![6](./screenshots/6.png)
+![7](./screenshots/7.png)
+![8](./screenshots/8.png)
+![9](./screenshots/9.png)
 
 ### Feedback and Support: 
 To report issues or suggest improvements, please submit an issue or pull request.

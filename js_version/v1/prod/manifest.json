@@ -1,7 +1,7 @@
 {
   "short_name": "One Page",
   "name": "One Page",
-  "description": " A minimalist space for focused thinking and A persistent note that stays with you, no matter what.",
+  "description": " A minimalist note taking solution.",
   "icons": [
     {
       "src": "https://samar1h.github.io/onepage/js_version/v1/prod/favicon.ico",

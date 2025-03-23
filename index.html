@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePage - Version Picker </title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent: #bb86fc;
+            --danger: #cf6679;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .card p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #000;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
+        }
+        
+        .warning {
+            background-color: rgba(207, 102, 121, 0.1);
+            border-left: 4px solid var(--danger);
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnePage</h1>
+        <p class="tagline">A minimalist note-taking app</p>
+    </header>
+    
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h2>JavaScript Version</h2>
+                <p>Fast, lightweight and has more settings.</p>
+                <a href="/js_version/v1/prod" class="button">Launch JS Version</a>
+                <div class="warning">
+                    <strong>Note:</strong> The JavaScript version stores data in localStorage, which has a limit of approximately 5MB in most browsers. For large notes, consider using the Flutter version.
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Flutter Version</h2>
+                <p>Recommended for larger notes and extended use.</p>
+                <a href="/flutter_version/v1/prod" class="button">Launch Flutter Version</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
